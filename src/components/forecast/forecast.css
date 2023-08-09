@@ -1,0 +1,104 @@
+.forecast {
+  margin-top: 10%;
+  color: rgb(255, 255, 255);
+}
+
+.title {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+
+.day-label-forecast {
+  display: flex;
+  flex-direction: column;
+}
+
+.days-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  order: 3;
+}
+
+.days-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.day {
+  width: calc(33.33% - 10px); /* Adjust for margins */
+  background-color: rgba(255, 255, 255, 0.082);
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecastleft {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.forecastright {
+  text-align: right;
+  font-size: 12px;
+}
+
+img.weather-icon {
+  width: 2rem;
+  margin-left: 10px;
+}
+
+.foretop {
+  margin-bottom: 0;
+}
+
+.forebot {
+  margin-top: 0;
+}
+
+.foredesc {
+    font-size: 13px;
+}
+
+.foretemp {
+    font-size: 2rem;
+}
+
+@media (max-width: 780px) {
+    .foretemp {
+        font-size: 1rem;
+    }
+
+    .foretop, .forebot, .foredesc {
+        font-size: 10px;
+      }
+}
+
+@media (max-width: 480px) {
+    .foretemp {
+        font-size: 1rem;
+    }
+
+    .foretop, .forebot, .foredesc {
+        font-size: 9px;
+      }
+
+    .day {
+        padding: 5px;
+        width: calc(33.33% - 5px); /* Adjust for margins */
+        height: 90%;
+    }
+
+}
