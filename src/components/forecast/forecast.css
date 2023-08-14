@@ -1,10 +1,9 @@
 .forecast {
-  margin-top: 10%;
+  margin-top: 7%;
   color: rgb(255, 255, 255);
 }
 
 .title {
-  padding: 10px;
   font-size: 1.5rem;
 }
 
@@ -19,7 +18,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  padding: 10px;
   order: 3;
 }
 
@@ -31,7 +29,7 @@
 }
 
 .day {
-  width: calc(33.33% - 10px); /* Adjust for margins */
+  width: calc(33.33% - 10px); 
   background-color: rgba(255, 255, 255, 0.082);
   border-radius: 6px;
   padding: 10px;
@@ -78,7 +76,7 @@ img.weather-icon {
 
 @media (max-width: 780px) {
     .foretemp {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 
     .foretop, .forebot, .foredesc {
@@ -96,9 +94,15 @@ img.weather-icon {
       }
 
     .day {
-        padding: 5px;
-        width: calc(33.33% - 5px); /* Adjust for margins */
+        padding-left: 2%;
+        width: calc(33.33% - 4px); 
         height: 90%;
     }
+
+    .forecast {
+      margin-top: 15%;
+      width: 100%;
+    }
+
 
 }
